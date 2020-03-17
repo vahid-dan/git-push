@@ -8,7 +8,7 @@ function set_value (){
 	[[ ! -z $1 ]] && echo $1 || ([[ ! -z $2 ]] && echo $2 || echo $3)
 }
 
-CONTAINER_NAME="flare-git-push"
+CONTAINER_NAME="git-push"
 
 GIT_REMOTE_USER_NAME_DEFAULT=""
 GIT_REMOTE_USER_NAME_GENERAL=$(yq r cibr-config.yml git.remote.user.name)
