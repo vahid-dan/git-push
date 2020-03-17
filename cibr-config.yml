@@ -1,0 +1,35 @@
+### Configuration File for CIBR-FLARE Project
+
+# If no value is entered for a key, the default value will be applied.
+
+# General settings will be overwritten by container settings if different.
+
+# If no value is e
+
+## General Settings
+shared-directory          : /home/vd/cibr-shared
+app-directory             : /root/app
+ssh-key:
+  public                  : /home/vd/.ssh/id_rsa.pub
+  private                 : /home/vd/.ssh/id_rsa
+git:
+  remote:
+    server                : # github.com (default)
+    branch                : # master (default)
+    user:
+      name                : vahid-dan
+      email               : v.daneshmand@gmail.com
+
+## flare-git-push Container Settings
+git-push:
+  git:
+    ssh-key:
+      public              : /home/vd/.ssh/id_rsa.pub
+      private             : /home/vd/.ssh/id_rsa
+    remote:
+      server              : github.com
+      repository          : vahid-dan/push-test.git
+      branch              : dev
+      user:
+        name              :
+        email             :
